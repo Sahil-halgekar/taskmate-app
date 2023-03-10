@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "701018920254",
+    "project_id": "taskmate-5a6cb",
+    "storage_bucket": "taskmate-5a6cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701018920254:android:0df26ac4a08fe40b16486f",
+        "android_client_info": {
+          "package_name": "com.example.taskmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701018920254-dsm1jovt0lqq4p4ibd500mlvqjl7pfpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhFJC8AmjZI-NCmbyysfXAPVvBBMu_dWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701018920254-dsm1jovt0lqq4p4ibd500mlvqjl7pfpu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "701018920254-2e8ejin3aqj9nftnqu71meeop53k25c9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
