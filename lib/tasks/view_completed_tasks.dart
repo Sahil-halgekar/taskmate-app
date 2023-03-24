@@ -81,18 +81,21 @@ class _viewCompletedTasksState extends State<viewCompletedTasks> {
     for (int i = 0; i < completedTask.length; i++) {
       for (var emailMap in completedTask[i]['completedBy']) {
         if (emailMap.isNotEmpty) {
-          if (emailMap.values
-                  .toList()[0]
-                  .compareTo(completedTask[i]['dueDate']) <=
-              0) {
-            onTime.add(completedTask[i]);
-          } else {
-            latesubmitted.add(completedTask[i]);
+          if (emailMap.keys.toList()[0] == auth.currentUser!.email) {
+            if (emailMap.values
+                    .toList()[0]
+                    .compareTo(completedTask[i]['dueDate']) <=
+                0) {
+              onTime.add(completedTask[i]);
+            } else {
+              latesubmitted.add(completedTask[i]);
+            }
           }
         }
       }
     }
     isLoading = false;
+    print(completedTask.length);
   }
 
   @override
